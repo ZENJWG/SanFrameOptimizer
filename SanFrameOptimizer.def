@@ -1,0 +1,3 @@
+EXPORTS
+    SanFrameOptimizer_BeforeNativeReplay
+    SanFrameOptimizer_AfterNativePresent

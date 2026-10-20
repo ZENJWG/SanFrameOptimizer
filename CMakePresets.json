@@ -1,0 +1,33 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": { "major": 4, "minor": 2, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "vs2026-x86",
+      "displayName": "VS 2026 - Win32",
+      "generator": "Visual Studio 18 2026",
+      "architecture": "Win32",
+      "binaryDir": "${sourceDir}/build"
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "release",
+      "configurePreset": "vs2026-x86",
+      "configuration": "Release"
+    },
+    {
+      "name": "debug",
+      "configurePreset": "vs2026-x86",
+      "configuration": "Debug"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "release",
+      "configurePreset": "vs2026-x86",
+      "configuration": "Release",
+      "output": { "outputOnFailure": true }
+    }
+  ]
+}
